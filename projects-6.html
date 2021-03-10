@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        #content-area {
+            height: 556px;
+            margin: 20px;
+        }
+        #footer-area {
+            padding: 20px;
+            text-align: center;
+            font-family: "Courier New";
+        }
+        #nav-area {
+            border-bottom: 1px solid black;
+            padding: 40px;
+            background-color: #F8F8F8;
+        }
+        iframe {
+            padding-top: 20px;
+            height: 550px;
+            width: 900px;
+        }
+        #description{
+            border-left: 1px solid black;
+            font-size: 18px;
+            padding-left: 50px;
+            font-family: serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="container-fluid" id="nav-area">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="projects.html">Project One</a></li>
+                                <li><a class="dropdown-item" href="projects-2.html">Project Two</a></li>
+                                <li><a class="dropdown-item" href="projects-3.html">Project Three</a></li>
+                                <li><a class="dropdown-item" href="projects-4.html">Project Four</a></li>
+                                <li><a class="dropdown-item" href="projects-5.html">Project Five</a></li>
+                                <li><a class="dropdown-item" href="projects-6.html">Project Six</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="row" id="content-area">
+        <div id ="content" class="col-md-9">
+            <iframe src="Content/box-model.html"></iframe>
+        </div>
+        <div id="description"  class="col-md-3">
+            <p>This is an assignment that I did while a senior in high school. I was to emulate the common box-model
+                style that all websites use to organize their information. The first part, margin, is the part that
+                spaces the outside-most area of of the box. The second part, border, is either the invisible
+                or visible wall that seperates the inside of the page from the outside. The third part, padding, is the
+                spacing around the content part of the page. Last part is of course where the content goes. The assignment was overall
+                simple and fairly easy to complete. I like how close the model looks to how it looks on dev tools.</p>
+        </div>
+    </div>
+    <div class="container-fluid" id="footer-area">
+        <nav>
+            <p>This is a copyrighted assignment. Steal it at your own risk to your life.
+                >u<</p>
+        </nav>
+    </div>
+</main>
+<footer>

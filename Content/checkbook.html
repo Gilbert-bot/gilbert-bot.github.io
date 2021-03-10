@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var newRow = `
+                <tr>
+                <td class="body-date"><input type="date"></td>
+                <td class="body-check"><input type="number" min="501"></td>
+                <td class="body-item"><input type="text"></td>
+                <td class="body-budget"><input type="list" list="budgetItems" class="budget_type"></td>
+                <td><span class="dollar-sign">$</span><input type="number" class="cost"><input type="button" class="save"></td>
+            </tr> `;
+
+            var checkbookBody = document.querySelector("table-body")
+        }
+
+    </script>
+    <style>
+        table {
+            border: black solid 1px;
+        }
+        td {
+            border: black solid 1px;
+        }
+        thead {
+            text-align: center;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center">Checkbook and Budget Calculator</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Date</td>
+                <td>Check #</td>
+                <td>Item</td>
+                <td>Budget Type</td>
+                <td>Cost</td>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <tr>
+                <td class="body-date"><input type="date"></td>
+                <td class="body-check"><input type="number" min="501"></td>
+                <td class="body-item"><input type="text"></td>
+                <td class="body-budget"><input type="list" list="budgetItems" class="budget_type"></td>
+                <td><span class="dollar-sign">$</span><input type="number" class="cost"><input type="button" class="save"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td><label for="subtotal">Subtotal</label><span> $</span><input type="number" id="subtotal"></td>
+            </tr>
+        </tfoot>
+    </table>
+    <datalist id="budgetItems">
+        <option value="Housing">
+        <option value="Food">
+        <option value="Clothing">
+        <option value="Utilities">
+        <option value="Transportation">
+        <option value="Entertainment">
+        <option value="Miscellaneous">
+    </datalist>
+</body>
+</html>

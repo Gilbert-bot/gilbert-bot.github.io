@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application</title>
+</head>
+<body>
+<datalist id="age-group">
+    <option value="14 - 25">
+    <option value="26 - 34">
+    <option value="35 - 55">
+    <option value="60+">
+</datalist>
+<datalist id="experience-bar">
+    <option value="0"></option>
+    <option value="50"></option>
+    <option value="100"></option>
+</datalist>
+
+<h1>Job Application</h1>
+<form action="" method="get">
+    <fieldset>
+        <legend> Personal Information</legend>
+        <p>Directions: <b>Read and complete all the required information down below.</b></p>
+        <label for="firstName">First Name:</label>
+        <input name="firstName" type="text" id="firstName">
+        <label for="lastName">Last Name:</label>
+        <input name="lastName" type="text" id="lastName">
+        <br>
+        <br>
+        <label for="age">Age:</label>
+        <input list="age-group" name="age" id="age">
+        <br>
+        <br>
+        <label for="birthday">Date of Birth:</label>
+        <input name="birthday" type="date" id="birthday"
+               value="2020-03-02"
+               min="1900-01-01" max="2020-03-02">
+        <br>
+        <br>
+        <label for="male">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br>
+        <br>
+        <label for="telephone">Personal Phone Number:</label>
+        <input type="tel" id="telephone" name="telephone">
+        <br>
+        <br>
+        <label for="describe">Describe Yourself:</label>
+        <br>
+        <textArea id="describe"></textArea>
+        <br>
+        <br>
+        <label for="water">Amount of Water Drunk Daily:</label>
+        <br>
+        <label for="water">Low</label>
+        <input type="range" name="water" id="water">
+        <label for="water">High</label>
+        <br>
+        <br>
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+        <br>
+        <br>
+        <label for="email">Personal Email Address</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <br>
+        <label for="time">Bedtime:</label>
+        <input type="time" id="time" name="time">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+</body>
+</html>
