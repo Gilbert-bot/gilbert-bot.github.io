@@ -1,42 +1,4 @@
-body {
-    background-color: bisque;
-}
-
-nav>ul>li {
-    display: inline-block;
-    border: 1px solid black;
-    background-color: black;
-    color: white;
-}
-
-nav a:link, nav a:hover, nav a:visited, nav a:active {
-    text-decoration: none;
-    color: white;
-}
-
-.duck-row {
-    height: 120px;
-}
-
-#duck {
-    animation-duration: 2.5s;
-    animation-direction: normal;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-name: animation-duck;
-    animation-timing-function: linear;
-    background-color: blanchedalmond;
-    width: 100px;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@keyframes animation-duck {
-    0% {
-        transform: rotate(0rad);
-    }
-    100% {
-        transform: rotate(10rad);
-    }
+#navbar-content {
+    border-left: 1px black solid;
+    padding-left: 10px;
 }
