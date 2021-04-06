@@ -5,6 +5,7 @@
     border-left: 1px black solid;
     padding-left: 10px;
 }
-body {
-    margin: 25px;
+main {
+    padding-left: 50px;
+    padding-right: 50px;
 }
