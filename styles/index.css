@@ -8,7 +8,7 @@ nav a {
     color: white;
 }
 #nav-content a:hover {
-    background-color: #dcdcdc;
+    background-color: #8b8b8b;
     color: black;
 }
 @media (min-width: 359px) {
@@ -26,14 +26,23 @@ nav a {
     border-radius: 50%;
 }
 h1 {
-    font-size: 72px;
+    font-size: 4rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
     color: white;
-    padding-top: 10px;
 }
 h3 {
     font-size: 27px;
     color: white;
     padding-top: 10px;
+}
+#brand {
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: 100;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    padding-left: inherit;
 }
 @-webkit-keyframes move {
     100% {
@@ -970,4 +979,59 @@ h3 {
     transform: translate3d(20px, 997px, 1858px);
     background: #d92694;
 }
-
+.bubble:nth-child(101) {
+    height: 24px;
+    width: 24px;
+    -webkit-animation-delay: -14s;
+    animation-delay: -14s;
+    transform: translate3d(102px, 225px, 756px);
+    background: #26c4d9;
+}
+.bubble:nth-child(102) {
+    height: 48px;
+    width: 48px;
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s;
+    transform: translate3d(4px, 243px, 298px);
+    background: #2668d9;
+}
+.bubble:nth-child(103) {
+    height: 36px;
+    width: 36px;
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+    transform: translate3d(2px, 146px, 187px);
+    background: #26d9d3;
+}
+.bubble:nth-child(104) {
+    height: 34px;
+    width: 34px;
+    -webkit-animation-delay: -0.2s;
+    animation-delay: -0.2s;
+    transform: translate3d(1px, 50px, 123px);
+    background: #2629d9;
+}
+.bubble:nth-child(105) {
+    height: 39px;
+    width: 39px;
+    -webkit-animation-delay: -0.6s;
+    animation-delay: -0.6s;
+    transform: translate3d(5px, 235px, 159px);
+    background: #2685d9;
+}
+.bubble:nth-child(106) {
+    height: 24px;
+    width: 24px;
+    -webkit-animation-delay: -10.3s;
+    animation-delay: -10.3s;
+    transform: translate3d(104px, 568px, 951px);
+    background: #a926d9;
+}
+.bubble:nth-child(107) {
+    height: 57px;
+    width: 57px;
+    -webkit-animation-delay: -12.8s;
+    animation-delay: -12.8s;
+    transform: translate3d(498px, 676px, 1095px);
+    background: #d9c726;
+}
