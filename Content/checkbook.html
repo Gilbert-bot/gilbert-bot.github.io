@@ -7,14 +7,17 @@
         document.addEventListener("DOMContentLoaded", function(event) {
             const tableData = [];
 
+            const summary = document.querySelector("#subtotal");
+
             const newRow = `
                 <tr>
-                <td class="body-date"><input type="date" class="date"></td>
-                <td class="body-check"><input type="number" min="501" class="check_number"></td>
-                <td class="body-item"><input type="text" class="text"></td>
-                <td class="body-budget"><input type="list" list="budgetItems" class="list"></td>
-                <td><span class="dollar-sign">$</span><input type="number" class="cost"><button class="save">Save</button></td>
-                </tr> `;
+                    <td class="body-date"><input type="date" class="date"></td>
+                    <td class="body-check"><input type="number" min="501" class="check_number"></td>
+                    <td class="body-item"><input type="text" class="text"></td>
+                    <td class="body-budget"><input type="list" list="budgetItems" class="list"></td>
+                    <td><span class="dollar-sign">$</span><input type="number" class="cost"><button class="save">Save</button></td>
+                </tr>
+                `;
 
             const checkbookBody = document.querySelector("#table-body");
             checkbookBody.addEventListener("click", function(event) {
@@ -35,6 +38,13 @@
                     rowData.push(cost.value);
                     tableData.push(rowData)
                     console.log(tableData)
+
+                    let subtotal = 0;
+
+                    for (let i = 0; i < tableData.length; i ++) {
+                        subtotal += parseFloat(tableData[i][4]);
+                    }
+                    summary.textContent = subtotal.toFixed(2);
                 }
             } )
         } )
@@ -78,7 +88,7 @@
         <tfoot>
             <tr>
                 <td colspan="4"></td>
-                <td><label for="subtotal">Subtotal</label><span> $</span><input type="number" id="subtotal"></td>
+                <td><label for="subtotal">Subtotal</label><span> $ </span><span id="subtotal"></span></td>
             </tr>
         </tfoot>
     </table>
