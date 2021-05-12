@@ -5,16 +5,38 @@
     <title>Title</title>
     <script>
         document.addEventListener("DOMContentLoaded", function(event) {
-            var newRow = `
-                <tr>
-                <td class="body-date"><input type="date"></td>
-                <td class="body-check"><input type="number" min="501"></td>
-                <td class="body-item"><input type="text"></td>
-                <td class="body-budget"><input type="list" list="budgetItems" class="budget_type"></td>
-                <td><span class="dollar-sign">$</span><input type="number" class="cost"><input type="button" class="save"></td>
-            </tr> `;
+            const tableData = [];
 
-            var checkbookBody = document.querySelector("#table-body")
+            const newRow = `
+                <tr>
+                <td class="body-date"><input type="date" class="date"></td>
+                <td class="body-check"><input type="number" min="501" class="check_number"></td>
+                <td class="body-item"><input type="text" class="text"></td>
+                <td class="body-budget"><input type="list" list="budgetItems" class="list"></td>
+                <td><span class="dollar-sign">$</span><input type="number" class="cost"><button class="save">Save</button></td>
+                </tr> `;
+
+            const checkbookBody = document.querySelector("#table-body");
+            checkbookBody.addEventListener("click", function(event) {
+                if (event.target.matches ("button")) {
+                    checkbookBody.insertAdjacentHTML("beforeend", newRow)
+                    let tableRow = event.target.parentNode.parentNode;
+                    let date = tableRow.querySelector("input.date")
+                    let check_number = tableRow.querySelector("input.check_number")
+                    let text = tableRow.querySelector("input.text")
+                    let list = tableRow.querySelector("input.list")
+                    let cost = tableRow.querySelector("input.cost")
+
+                    let rowData = [];
+                    rowData.push(date.value);
+                    rowData.push(check_number.value);
+                    rowData.push(text.value);
+                    rowData.push(list.value);
+                    rowData.push(cost.value);
+                    tableData.push(rowData)
+                    console.log(tableData)
+                }
+            } )
         } )
 
     </script>
@@ -37,20 +59,20 @@
     <table>
         <thead>
             <tr>
-                <td>Date</td>
-                <td>Check #</td>
-                <td>Item</td>
-                <td>Budget Type</td>
-                <td>Cost</td>
+                <th>Date</th>
+                <th>Check #</th>
+                <th>Item</th>
+                <th>Budget Type</th>
+                <th>Cost</th>
             </tr>
         </thead>
         <tbody id="table-body">
             <tr>
-                <td class="body-date"><input type="date"></td>
-                <td class="body-check"><input type="number" min="501"></td>
-                <td class="body-item"><input type="text"></td>
-                <td class="body-budget"><input type="list" list="budgetItems" class="budget_type"></td>
-                <td><span class="dollar-sign">$</span><input type="number" class="cost"><input type="button" class="save"></td>
+                <td class="body-date"><input type="date" class="date"></td>
+                <td class="body-check"><input type="number" min="501" class="check_number"></td>
+                <td class="body-item"><input type="text" class="text"></td>
+                <td class="body-budget"><input type="list" list="budgetItems" class="list"></td>
+                <td><span class="dollar-sign">$</span><input type="number" class="cost"><button class="save">Save</button></td>
             </tr>
         </tbody>
         <tfoot>

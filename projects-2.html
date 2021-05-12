@@ -14,11 +14,6 @@
             text-align: center;
             font-family: "Courier New";
         }
-        #nav-area {
-            border-bottom: 1px solid black;
-            padding: 40px;
-            background-color: #F8F8F8;
-        }
         iframe {
             padding-top: 20px;
             height: 550px;
@@ -35,33 +30,34 @@
 </head>
 <body>
 <main>
-    <header class="container-fluid" >
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Febreze_Logo.svg/1200px-Febreze_Logo.svg.png" width="50px" height="auto"></a>
-            <div class="collapse navbar-collapse" id="navbar-content">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Projects
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="projects.html">Checkbook</a></li>
-                            <li><a class="dropdown-item" href="projects-2.html">Semantics</a></li>
-                            <li><a class="dropdown-item" href="projects-3.html">Forms</a></li>
-                            <li><a class="dropdown-item" href="projects-4.html">JavaScript Loops</a></li>
-                            <li><a class="dropdown-item" href="projects-5.html">Audio and Video</a></li>
-                            <li><a class="dropdown-item" href="projects-6.html">Box-Model</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resume.html">Resume</a>
-                    </li>
-                </ul>
-            </div>
-    </header>
+    <header class="container-fluid">
+        <div class="row">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark justify-content-between" style="background-color: black">
+                <a class="navbar-brand" style="font-size: 24px">Gilbert Cruz</a>
+                <div id="nav-content">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="projects.html">Checkbook</a></li>
+                                <li><a class="dropdown-item" href="projects-3.html">Forms</a></li>
+                                <li><a class="dropdown-item" href="projects-4.html">JavaScript Loops</a></li>
+                                <li><a class="dropdown-item" href="projects-5.html">Audio and Video</a></li>
+                                <li><a class="dropdown-item" href="projects-6.html">Box-Model</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     <div class="row" id="content-area">
         <div id ="content" class="col-md-9">
             <iframe src="Content/semantics.html"></iframe>
