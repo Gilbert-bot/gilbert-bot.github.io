@@ -37,10 +37,44 @@ h3 {
     padding-top: 10px;
 }
 .circle {
-    width:15px;
-    height:15px;
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    background: linear-gradient(#33ccff,#ff0066);
     border-radius: 50%;
-    background-color: white;
+}
+.circle:after {
+    content:'';
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    bottom: 35px;
+    left: 35px;
+    border-radius: 50%;
+    background-color: black;
+
+}
+.circle  span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#33ccff,#ff0066);
+    border-radius: 50%;
+}
+.circle span:nth-child(1) {
+    filter: blur(5px);
+}
+
+.circle span:nth-child(2) {
+    filter: blur(10px);
+}
+
+.circle span:nth-child(3) {
+    filter: blur(20px);
+}
+
+.circle span:nth-child(4) {
+    filter: blur(55px);
 }
 @-webkit-keyframes move {
     100% {
