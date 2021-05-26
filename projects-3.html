@@ -5,26 +5,29 @@
     <title>Title</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <style>
-        #content-area {
-            height: 556px;
-            margin: 20px;
+        nav a {
+            color: white;
         }
-        #footer-area {
-            padding: 20px;
-            text-align: center;
-            font-family: "Courier New";
+        #nav-content a:hover {
+            background-color: #8b8b8b;
+            color: black;
+        }
+        @media (min-width: 359px) {
+            #nav-content {
+                font-size: 18px;
+                display: inline-block;
+            }
         }
         iframe {
-            padding-top: 20px;
-            height: 550px;
+            padding-top: 100px;
+            height: 750px;
             width: 900px;
         }
-        #description{
-            border-left: 1px solid black;
-            font-size: 18px;
-            padding-left: 50px;
-            font-family: serif;
-            text-align: center;
+        .circle {
+            width:15px;
+            height:15px;
+            border-radius: 50%;
+            background-color: white;
         }
     </style>
 </head>
@@ -33,7 +36,9 @@
     <header class="container-fluid">
         <div class="row">
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark justify-content-between" style="background-color: black">
-                <a class="navbar-brand" style="font-size: 24px">Gilbert Cruz</a>
+                <a class="navbar-brand">
+                    <div class="circle"></div>
+                </a>
                 <div id="nav-content">
                     <ul class="nav">
                         <li class="nav-item">
@@ -46,6 +51,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="projects.html">Checkbook</a></li>
                                 <li><a class="dropdown-item" href="projects-2.html">Semantics</a></li>
+                                <li><a class="dropdown-item" href="projects-3.html">Forms</a></li>
                                 <li><a class="dropdown-item" href="projects-4.html">JavaScript Loops</a></li>
                                 <li><a class="dropdown-item" href="projects-5.html">Audio and Video</a></li>
                                 <li><a class="dropdown-item" href="projects-6.html">Box-Model</a></li>
@@ -58,25 +64,19 @@
                 </div>
             </nav>
         </div>
-    <div class="row" id="content-area">
-        <div id ="content" class="col-md-9">
+    </header>
+    <div class="row">
+        <div class="col-1" style="background-color: darkgrey; height: auto"></div>
+        <div class="col-10" align="center">
             <iframe src="Content/forms.html"></iframe>
         </div>
-        <div id="description"  class="col-md-3">
-            <p>This is an assignment that I did while a junior in high school. The basic premise of the assignment
-                was to create a form sheet checking data that can be inputted in by the user. The assignment was overall
-                simple and fairly easy to complete. This was the first organized assignment that I did, so i am pretty proud of it.</p>
-        </div>
-    </div>
-    <div class="container-fluid" id="footer-area">
-        <nav>
-            <p>This is a copyrighted assignment. Steal it at your own risk to your life.
-                >u<</p>
-        </nav>
+        <div class="col-1" style="background-color: darkgrey; height: 795px"></div>
     </div>
 </main>
 <footer>
-
+    <div class="container-fluid" id="footer-area">
+        <span></span>
+    </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
