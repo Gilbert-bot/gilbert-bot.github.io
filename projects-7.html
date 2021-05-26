@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <style>
+    nav a {
+      color: white;
+    }
+    #nav-content a:hover {
+      background-color: #8b8b8b;
+      color: black;
+    }
+    @media (min-width: 359px) {
+      #nav-content {
+        font-size: 18px;
+        display: inline-block;
+      }
+    }
+    img {
+      padding-top: 150px;
+      padding-right: 500px;
+      height: auto;
+      width: 1200px;
+    }
+    .circle {
+      width:15px;
+      height:15px;
+      border-radius: 50%;
+      background-color: white;
+    }
+    #table-content {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 200px;
+    }
+    #table-header {
+      margin-right:75px;
+    }
+    table {
+      border: black solid 1px;
+    }
+    td {
+      border: black solid 1px;
+    }
+    thead {
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header class="container-fluid">
+    <div class="row">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark justify-content-between" style="background-color: black">
+        <a class="navbar-brand">
+          <div class="circle"></div>
+        </a>
+        <div id="nav-content">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="projects.html">Checkbook</a></li>
+                <li><a class="dropdown-item" href="projects-2.html">Semantics</a></li>
+                <li><a class="dropdown-item" href="projects-3.html">Forms</a></li>
+                <li><a class="dropdown-item" href="projects-4.html">JavaScript Loops</a></li>
+                <li><a class="dropdown-item" href="projects-5.html">Audio and Video</a></li>
+                <li><a class="dropdown-item" href="projects-6.html">Box-Model</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="row">
+    <div class="col-1" style="background-color: darkgrey; height: 795px"></div>
+    <div class="col-6">
+      <img src="Images/SDLC.png">
+    </div>
+    <div class="col-4 text-center" id="table-content">
+      <h3 id="table-header">SDLC Phases vs Jobs</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>SDLC Phases</th>
+            <th>SDLC Jobs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Planning</td>
+            <td>Managers</td>
+          </tr>
+          <tr>
+            <td>Analysis</td>
+            <td>Managers</td>
+          </tr>
+          <tr>
+            <td>Design</td>
+            <td>Software Designers</td>
+          </tr>
+          <tr>
+            <td>Development</td>
+            <td>Software Engineers/Web Developers</td>
+          </tr>
+          <tr>
+            <td>Testing</td>
+            <td>Testers</td>
+          </tr>
+          <tr>
+            <td>Publication</td>
+            <td>Release Management/Marketers</td>
+          </tr>
+          <tr>
+            <td>Maintenance</td>
+            <td>Developers</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-1" style="background-color: darkgrey; height: 795px"></div>
+  </div>
+</main>
+<footer>
+  <div class="container-fluid" id="footer-area">
+    <span></span>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
